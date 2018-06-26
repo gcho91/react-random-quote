@@ -1,0 +1,89 @@
+body{
+  /* sets background image and sets to cover on all browsers. magic below  */
+  background: url("https://image.ibb.co/csR8sy/filip_bunkens_508422_unsplash_cropped.jpgg") no-repeat center center fixed;
+  /* background-color:gray; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.quote-component{
+  /* background-color:salmon; */
+  margin-top:160px;
+  margin-bottom:100px;
+  text-align:center;
+
+}
+
+.quote-card{
+  border:1px solid #ccc;
+  border-radius:4px;
+  width:600px;
+  margin: 0 auto;
+  padding: 30px 30px 50px;
+  text-align:center;
+}
+
+.quote-text{
+  color:white;
+}
+
+button{
+
+
+}
+
+.quote-button{
+  border-color:white;
+  border-style:solid;
+  border-width: medium;
+  background: none;
+  padding:15px 32px;
+  text-transform: uppercase;
+  color:white;
+
+  /* display: inline-block;*/
+  margin: 5px;
+ /* display: block; */
+}
+
+.quote-button-container{
+  display: flex;
+  flex: center;
+  justify-content:center;
+  /* margin: 5px; */
+}
+
+
+
+
+
+/* author comp */
+
+.Footer{
+  color: white;
+  position:absolute;
+  top:0;
+  width:100%;
+  /*height:120px; */  /* Height of the footer */
+  background:black;
+  
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  body{
+    font-size: 0.9em;
+  }
+  .quote-card {
+    width:80%;
+  }
+
+  .quote-button-container{
+    display:block;
+  }
+}
