@@ -1,20 +1,20 @@
+
+
 body{
   /* sets background image and sets to cover on all browsers. magic below  */
   background: url("https://image.ibb.co/csR8sy/filip_bunkens_508422_unsplash_cropped.jpgg") no-repeat center center fixed;
-  /* background-color:gray; */
-  -webkit-background-size: cover;
+  
+  -webkit-background-size: cover; 
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
 
-.quote-component{
-  /* background-color:salmon; */
+.quote-component {
   margin-top:160px;
   margin-bottom:100px;
   text-align:center;
-
 }
 
 .quote-card{
@@ -30,11 +30,8 @@ body{
   color:white;
 }
 
-button{
 
-
-}
-
+/* button */
 .quote-button{
   border-color:white;
   border-style:solid;
@@ -43,17 +40,13 @@ button{
   padding:15px 32px;
   text-transform: uppercase;
   color:white;
-
-  /* display: inline-block;*/
   margin: 5px;
- /* display: block; */
 }
 
 .quote-button-container{
   display: flex;
   flex: center;
   justify-content:center;
-  /* margin: 5px; */
 }
 
 
