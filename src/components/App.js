@@ -27,7 +27,6 @@ const quotes = [
     newQuote(){
       let random = Math.floor((Math.random() * 6)+1);
 
-      console.log("herroooo making changes fuck you");
       
       this.setState( ()=> {
         return {
@@ -46,8 +45,8 @@ const quotes = [
     //as soon as component loads, it runs new Quote method
 
     tweetQuote(){
-      // alert("fuck this tweet")
-    console.log(this.state.quote, this.state.author)
+    
+    // console.log(this.state.quote, this.state.author)
 
     let tweetUrl = `https://twitter.com/intent/tweet?text=${this.state.quote} -${this.state.author}`
     
@@ -75,7 +74,7 @@ const quotes = [
           
           
             <button className="quote-button" onClick={this.newQuote}>   Generate A Quote</button>
-                {/* <button onClick={this.newQuote}>   Tweet</button> */}
+
 
             <button 
             className="quote-tweet quote-button" 
@@ -107,8 +106,7 @@ const quotes = [
 <header>
         <img className="lushlogo" src="https://image.ibb.co/d0pMS8/randomquote_logo.png" alt="lush white logo"/>
 </header>
-          {/*} <h3>Random Quote Generator</h3>
-      <p>by Gloria Cho</p> */} 
+
     </div> 
 
 
