@@ -17,6 +17,7 @@ const quotes = [
     constructor(props){
       super(props);
       this.newQuote = this.newQuote.bind(this);
+      this.tweetQuote=this.tweetQuote.bind(this);
       this.state = {
         quote: '',
         author: ''
@@ -25,6 +26,8 @@ const quotes = [
     
     newQuote(){
       let random = Math.floor((Math.random() * 6)+1);
+
+      console.log("herroooo making changes");
       
       this.setState( ()=> {
         return {
@@ -41,6 +44,18 @@ const quotes = [
     }
     
     //as soon as component loads, it runs new Quote method
+
+    tweetQuote(){
+      // alert("fuck this tweet")
+    console.log(this.state.quote, this.state.author)
+
+    let tweetUrl = `https://twitter.com/intent/tweet?text=${this.state.quote} -${this.state.author}`
+    
+
+    window.open(tweetUrl)
+
+
+    }
     
     render(){
       return (
@@ -62,13 +77,17 @@ const quotes = [
             <button className="quote-button" onClick={this.newQuote}>   Generate A Quote</button>
                 {/* <button onClick={this.newQuote}>   Tweet</button> */}
 
-            <button className="quote-tweet quote-button">Tweet</button>
+            <button 
+            className="quote-tweet quote-button" 
+            onClick={this.tweetQuote} 
+            > 
+            Tweet</button>
           
           </div>
         </div>    
         
         
-        <Footer /> 
+        <Header /> 
 
 
           </div>
@@ -79,14 +98,20 @@ const quotes = [
 
 
 
-  class Footer extends Component {
+  class Header extends Component {
     render() {
       return (
-        <div className="Footer">
-          <h3>Random Quote Generator</h3>
-          <p>by Gloria Cho</p>
+        <div className="Header">
 
-        </div>
+
+<header>
+        <img className="lushlogo" src="https://image.ibb.co/d0pMS8/randomquote_logo.png" alt="lush white logo"/>
+</header>
+          {/*} <h3>Random Quote Generator</h3>
+      <p>by Gloria Cho</p> */} 
+    </div> 
+
+
       );
     }
   }

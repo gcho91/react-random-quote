@@ -62,7 +62,7 @@ button{
 
 /* author comp */
 
-.Footer{
+.Header{
   color: white;
   position:absolute;
   top:0;
@@ -70,6 +70,11 @@ button{
   /*height:120px; */  /* Height of the footer */
   background:black;
   
+}
+
+.lushlogo{
+  height:70px;
+  /* make my logo and set custom height on png*/
 }
 
 
