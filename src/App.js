@@ -27,7 +27,7 @@ const quotes = [
     newQuote(){
       let random = Math.floor((Math.random() * 6)+1);
 
-      console.log("herroooo making changes");
+      console.log("herroooo making changes fuck you");
       
       this.setState( ()=> {
         return {
