@@ -2,7 +2,7 @@
 
 body{
   /* sets background image and sets to cover on all browsers. magic below  */
-  background: url("https://image.ibb.co/csR8sy/filip_bunkens_508422_unsplash_cropped.jpgg") no-repeat center center fixed;
+  background: url("https://s3.amazonaws.com/portfolioitems-gcho/filip-bunkens-508422-unsplash-cropped.jpg") no-repeat center center fixed;
   
   -webkit-background-size: cover; 
   -moz-background-size: cover;
